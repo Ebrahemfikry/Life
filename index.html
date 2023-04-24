@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>life system</title>
+</head>
+<body>
+    <main class="container-fluid p-0 m-0">
+        <i class="bi bi-list" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"></i>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Life</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                                <h3>الشاشه الرئيسيه</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li onclick="showOne1()">
+                        <a href="#">
+                            <div>
+                                <i class="fa-solid fa-database"></i>
+                                <h3>بيانات اساسيه</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <!-- #################### -->
+                        <ul id="menu11">
+                            <li><a href="BranchDefinition.html">تعريف الفرع</a></li>
+                            <li><a href="DefineStores.html">تعريف المخازن</a></li>
+                            <li><a href="KindsOfItems.html">تعريف الصنف</a></li>
+                            <li><a href="CategoryCard.html">كارت الصنف</a></li>
+                            <li><a href="dataPerson.html">بيانات العملاء </a></li>
+                            <li><a href="Suppliers.html">الموردين</a></li>
+                            <li><a href="callers.html">المناديب</a></li>
+                            <li><a href="sellers.html">البائعين</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="showTwo1()">
+                        <a>
+                            <div>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h3>الفواتير</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <!--  ##################### -->
+                        <ul id="menu21">
+                            <li><a href="Quote.html">مناقصات</a></li>
+                            <li><a href="reports.html">تقارير</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="showThree1()">
+                        <a>
+                            <div>
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                                <h3>المخازن</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <!-- ########################### -->
+                        <ul id="menu31">
+                            <li><a href="stockduringtheperiod.html">المخزون اول الفتره</a></li>
+                            <li>
+                                <a>الاذون<i class="fa-solid fa-chevron-left"></i></i></a>
+                
+                                <ul id="menu3_1">
+                                    <li><a href="Permissiontodeposititems.html">اذن ايداع اصناف </a></li>
+                                    <li><a href="Soexchangeitems.html">اذن صرف اصناف</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li onclick="showFive1()">
+                        <a>
+                            <div>
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                                <h3>الخزينه</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <ul id="menu51">
+                            <li><a href="Sodepositcash.html">ايرادات يوميه</a></li>
+                            <li><a href="Socashout.html">اذن صرف نقديه</a></li>
+                            <li>
+                                <a href="cashregister.html">تسجيل نقديه</a>
+                                <ul>
+                                    <li><a href="checkdeposit.html">ايداع شيكات</a></li>
+                                    <li><a href="VodafoneCash.html">فودافون كاش</a></li>
+                                    <li><a href="Bos.html">Bos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Treasuryreports.html">تقارير الخزنه</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="customers.html">
+                            <div>
+                                <i class="fa-solid fa-users"></i>
+                                <h3>العملاء</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Suppliers.html">
+                            <div>
+                                <i class="fa-solid fa-people-group"></i>
+                                <h3>الموردين</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Receiptnotes.html">
+                            <div>
+                                <i class="fa-regular fa-file"></i>
+                                <h3>اوراق القبض</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Paymentpapers.html">
+                            <div>
+                                <i class="fa-solid fa-file-lines"></i>
+                                <h3>اوراق الدفع</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li onclick="showFour1()">
+                        <a>
+                            <div>
+                                <i class="fa-solid fa-users"></i>
+                                <h3>المستخدمين</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <!-- ########################### -->
+                        <ul id="menu41">
+                            <li><a href="option.html">المستخدمين</a></li>
+                            <li><a href="option.html">تغير كلمه السر</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="home">
+            <aside>
+                <div class="pg">
+                    <img src="images/life.jpg" alt="">
+                </div>
+                
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                                <h3>الشاشه الرئيسيه</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li onclick="showOne()">
+                        <a href="#">
+                            <div>
+                                <i class="fa-solid fa-database"></i>
+                                <h3>بيانات اساسيه</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <!-- #################### -->
+                        <ul id="menu1">
+                            <li><a href="BranchDefinition.html" >تعريف الفرع</a></li>
+                            <li><a href="DefineStores.html" >تعريف المخازن</a></li>
+                            <li><a href="KindsOfItems.html" >تعريف الصنف</a></li>
+                            <li><a href="CategoryCard.html">كارت الصنف</a></li>
+                            <li><a href="dataPerson.html">بيانات العملاء </a></li>
+                            <li><a href="Suppliers.html">الموردين</a></li>
+                            <li><a href="callers.html">المناديب</a></li>
+                            <li><a href="sellers.html">البائعين</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="showTwo()">
+                        <a>
+                            <div>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h3>الفواتير</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <!--  ##################### -->
+                        <ul id="menu2">
+                            <li><a href="Quote.html">مناقصات</a></li>
+                            <li><a href="reports.html">تقارير</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="showThree()">
+                        <a>
+                            <div>
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                                <h3>المخازن</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <!-- ########################### -->
+                        <ul id="menu3">
+                            <li><a href="stockduringtheperiod.html">المخزون اول الفتره</a></li>
+                            <li>
+                                <a>الاذون<i class="fa-solid fa-chevron-left"></i></i></a>
+                                
+                                <ul id="menu3_1">
+                                    <li><a href="Permissiontodeposititems.html">اذن ايداع اصناف </a></li>
+                                    <li><a href="Soexchangeitems.html">اذن صرف اصناف</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li onclick="showFive()">
+                        <a>
+                            <div>
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                                <h3>الخزينه</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <ul id="menu5">
+                            <li><a href="Sodepositcash.html">ايرادات يوميه</a></li>
+                            <li><a href="Socashout.html">اذن صرف نقديه</a></li>
+                            <li>
+                                <a href="cashregister.html">تسجيل نقديه</a>
+                                <ul>
+                                    <li><a href="checkdeposit.html">ايداع شيكات</a></li>
+                                    <li><a href="VodafoneCash.html">فودافون كاش</a></li>
+                                    <li><a href="Bos.html">Bos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Treasuryreports.html">تقارير الخزنه</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="customers.html">
+                            <div>
+                                <i class="fa-solid fa-users"></i>
+                                <h3>العملاء</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Suppliers.html">
+                            <div>
+                                <i class="fa-solid fa-people-group"></i>
+                                <h3>الموردين</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Receiptnotes.html">
+                            <div>
+                                <i class="fa-regular fa-file"></i>
+                                <h3>اوراق القبض</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Paymentpapers.html">
+                            <div>
+                                <i class="fa-solid fa-file-lines"></i>
+                                <h3>اوراق الدفع</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li onclick="showFour()">
+                        <a>
+                            <div>
+                                <i class="fa-solid fa-users"></i>
+                                <h3>المستخدمين</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <!-- ########################### -->
+                        <ul id="menu4">
+                            <li><a href="option.html">المستخدمين</a></li>
+                            <li><a href="option.html">تغير كلمه السر</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section class="home-content">
+                <section class="definitions">
+                    <div class="box one">
+                        <h4>تعريفات اساسيه</h4>
+                        <div class="box-link">
+                            <a href="Addclass.html" class="spical">اضافه<span>صنف</span></a>
+                            <a href="Addclient.html" class="spical">اضافه<span>عميل</span></a>
+                            <a href="Addresource.html">اضافه<span>مورد</span></a>
+                        </div>
+                        <i class="fa-solid fa-user-plus"></i>
+                        <div class="fath">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                    <div class="box two">
+                        <h4>الفواتير</h4>
+                        <div class="box-link">
+                            <a href="billsale.html" class="spical">فاتوره<span>بيع</span></a>
+                            <a href="receipt.html" class="spical">فاتوره<span>شراء</span></a>
+                            <a href="salereturn.html" class="spical">مرتجع<span>بيع</span></a>
+                            <a href="Purchasereturn.html">مرتجع<span>شراء</span></a>
+                        </div>
+                        <i class="fa-solid fa-file"></i>
+                        <div class="fath">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                    <div class="box three">
+                        <h4>الخزنه</h4>
+                        <div class="box-link">
+                            <a href="Treasurybalance.html" class="spical">رصيد<span>الخزنه</span></a>
+                            <a href="cashregister.html">تسجيل<span>نقديه</span></a>
+                        </div>
+                        <i class="fa-solid fa-box-archive"></i>
+                        <div class="fath">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                    <div class="box four">
+                        <h4>المخزن</h4>
+                        <div class="box-link">
+                            <a href="Storebalance.html" class="spical">رصيد<span>المخزون</span></a>
+                            <a href="Missingitems.html">الاصناف<span>الناقصه</span></a>
+                        </div>
+                        <i class="fa-solid fa-database"></i>
+                        <div class="fath">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end  definitions-->
+
+                <!-- start rang-box -->
+                <h2 class="fw-bold">الاحصائيات </h2>
+                <section class="rang-box">
+                    <a href="" class="one">
+                        <div class="box">
+                        <i class="fa-solid fa-file-signature"></i>
+                            <div class="">
+                                <h2>المبيعات</h2>
+                                <h3>9</h3>
+                                <div class="fath">
+                                    <div class="prog"></div>
+                                </div>
+                                <p>تقرير حسابات المبيعات اليوميه</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="two">
+                        <div class="box ">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                            <div class="">
+                                <h2>مصروفات</h2>
+                                <h3>9</h3>
+                                <div class="fath">
+                                    <div class="prog"></div>
+                                </div>
+                                <p>تقرير حسابات مصروفات اليوميه</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="three">
+                        <div class="box ">
+                        <i class="fa-solid fa-file-shield"></i>
+                            <div class="">
+                                <h2>الخزينه</h2>
+                                <h3>9</h3>
+                                <div class="fath">
+                                    <div class="prog"></div>
+                                </div>
+                                <p>تقرير حسابات الخزينه اليوميه</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <!-- end rang-box -->
+
+                <!-- start print -->
+                <section class="print">
+                    <div class="head-table">
+                        <h3>اخر فواتير اليوم</h3>
+                        <a href="Printinvoicestoday.html">طباعه فواتير اليوم</a>
+                    </div>
+                    <hr class="text-gray">
+                    <div class="info-table">
+                        <h4>رقم الفاتوره</h4>
+                        <h4>التاريخ</h4>
+                        <h4>العميل</h4>
+                        <h4>القيمه</h4>
+                        <h4>المستخدم</h4>
+                    </div>
+                    <hr class="text-dark"> 
+                    <div class="footer-table">
+                        <a href="Newbillofsale.html">فاتوره بيع جديده</a>
+                        <a href="Viewallsalesinvoices.html">عرض كل فواتير البيع</a>
+                    </div>
+                </section>
+                <!-- end print  -->
+
+                <!-- start footer -->
+                <footer>
+                    <p>© 2023 system All rights reserved | Design by team </p>
+                </footer>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

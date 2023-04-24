@@ -1,0 +1,91 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --black2-color: rgba(0, 0, 0, 0.519);
+    --gray-color: #777;
+    --gray2-color: #999;
+    --blue-color: rgb(14, 130, 192);
+    --transition: all .5s;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    height: 100vh;
+    overflow: hidden;
+}
+main video{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+main::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #0000006e;
+    width: 100%;
+    height: 100%;
+}
+main .contain{
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+main .contain .box{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+main .contain .box img{
+    width: 80%;
+}
+main .contain .box form{
+    margin: auto;
+}
+main .contain .box form fieldset{
+    margin: 20px auto ;
+    width: 250px;
+    position: relative;
+}
+main .contain .box form fieldset input{
+    width: 100%;
+    padding: 7px 10px;
+    border: 0;
+    border-bottom: 1px solid #777;
+    outline: none;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+}
+main .contain .box form fieldset i{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    color: #38e6ec;
+}
+main .contain .box form input[type = "submit"]{
+    width: 30%;
+    padding: 5px 10px;
+    border: 0;
+    background-color: #67f035;
+    color: var(--white-color);
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: var(--transition);
+    margin-top: 20px;
+}
+main .contain .box form input[type = "submit"]:hover{
+    background-color: #62ca13;
+    color: #fff;
+}
